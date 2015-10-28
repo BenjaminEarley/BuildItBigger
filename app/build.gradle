@@ -21,12 +21,21 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_7
         targetCompatibility JavaVersion.VERSION_1_7
     }
+
+    productFlavors {
+        free {
+            applicationId "com.udacity.gradle.builditbigger.free"
+        }
+        paid {
+            applicationId "com.udacity.gradle.builditbigger.paid"
+        }
+    }
 }
 
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     compile 'com.android.support:appcompat-v7:22.1.1'
     compile project(':viewjokeactivity')
-    compile 'com.google.android.gms:play-services:7.3.0'
+    freeCompile 'com.google.android.gms:play-services:7.3.0'
     compile project(path: ':jokeBackend', configuration: 'android-endpoints')
 }
