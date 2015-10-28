@@ -1,10 +1,8 @@
 package com.benjaminearley.viewjokeactivity;
 
 import android.content.Intent;
-import android.os.Build;
-import android.support.v4.app.NavUtils;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
 import android.view.MenuItem;
 import android.widget.TextView;
 
